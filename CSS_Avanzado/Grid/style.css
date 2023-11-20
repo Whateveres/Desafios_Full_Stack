@@ -1,0 +1,132 @@
+/*Reseteo CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+body{
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: lightgrey;
+}
+
+/*Contenedor Principal*/
+.grid-container{
+    display:grid;
+    grid-template-areas: 
+    'nav nav'
+    'aside main'
+    'footer footer'
+    ;
+    grid-template-columns: 13% 2fr;
+}
+
+/*Barra Navegación*/
+nav{
+    background-color: black;
+    grid-area:nav;
+    padding:20px;
+    text-align:center;
+    color:white;
+    margin:0;
+}
+
+/*Barra Lateral*/
+aside{
+    grid-area:aside;
+    padding:0;
+    margin:0;
+    padding:20px;
+    padding-top:0;
+}
+
+/*Contenedor Flexible Barra Lateral*/
+.categorias-flex{
+    display:flex;
+    flex-direction:column;
+    padding:0;
+    margin-right: 20px;
+    margin-top:20px;
+}
+
+.categorias-flex h4{
+    margin-top:0;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+a{
+    margin:2px;
+    font-size: 13px;
+}
+
+.numero{
+    color:grey;
+}
+
+/*Productos*/
+main{
+    grid-area:main;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:20px;
+    padding-top:20px;
+    padding-right:20px;
+    padding-bottom:20px;
+}
+
+/*Tarjeta de Producto*/
+.flex-item{
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+    justify-content:space-between;
+    align-items: center;
+    padding-top:10px;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+img{
+    margin-top:10px;
+    max-width:80%;
+    height: 100%;
+}
+
+h3{
+    padding:0;
+    margin-top:10px;
+    margin-bottom: 15px;
+    padding-left:20px;
+    padding-right:20px;
+    text-align: center;
+}
+
+.precio{
+    color:grey;
+    font-size: 13px;
+    margin-bottom: 15px;
+}
+
+.comprar{
+    background-color: black;
+    margin:0;
+    padding:0;
+    width: 100%;
+    text-align:center;
+}
+
+.comprar p{
+    margin: 8px;
+    color:white;
+}
+
+/*Footer*/
+footer{
+    background-color: black;
+    grid-area:footer;
+    padding:20px;
+    text-align:center;
+    color:white;
+}
