@@ -1,5 +1,4 @@
-Course: Full Stack Development Bootcamp
-Organization: Desafio Latam
+Course: Full Stack Development Bootcamp - Organization: Desafio Latam
 
 An immersive program designed to equip participants with the comprehensive skills required for full-stack development using JavaScript.
 
